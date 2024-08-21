@@ -1,0 +1,652 @@
+<?php
+include('header.php')
+?>
+<!-- Header-->
+<section class="py-5">
+    <div class="container px-5 mb-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-11 col-xl-9 col-xxl-8">
+                <!-- Project Cards -->
+                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                    <div class="card-body p-0">
+                        <div class="ps-5 pe-5 pt-4">
+                            <h2 class="fw-bolder p-auto">Design and Development of an Automated Storage System
+                                (ASS) on Stacked Shelves with Programmable Logic Controller and Barcode</h2>
+                        </div>
+                        <div
+                            class="d-flex align-items-start align-items-md-center justify-content-between flex-column flex-md-row">
+                            <div class="ms-5 me-5 order-2 order-md-1">
+                                <div class="small text-muted ">01 February 2024 - 05 July 2024</div>
+
+                                <p id="less-12">
+                                    Designing a PLC-based ASS with barcodesDesigning an operational control
+                                    system for ASS with HMI and<span id="dots-12">...</span>
+                                </p>
+                                <span id="more-12" style="display:none;">
+                                    <ul>
+                                        <li><span style="font-weight: normal;">Designing a PLC-based ASS with
+                                                barcodes</span></li>
+                                        <li><span style="font-weight: normal;">Designing an operational control
+                                                system for ASS with HMI and web-based
+                                                ASS monitoring</span></li>
+                                        <li><span style="font-weight: normal;">Designing a control algorithm for
+                                                stepper motor speed in ASS.</span></li>
+                                    </ul>
+                                </span>
+                            </div>
+                            <div class="border-0 ms-5 me-5 mb-3 order-1 order-md-2">
+                                <img class="img-fluid rounded-2 d-none d-md-block"
+                                    src="./projects_files/240813024155_1.png" alt="..."
+                                    style="max-width:200px; max-height:200px">
+                            </div>
+                        </div>
+                        <div>
+                            <button id="button-12" onclick="clicked_button(12)"
+                                class="btn btn-primary form-control rounded-0">Read More</button>
+                            <div class="text-center d-none d-md-block">
+                                <!-- Trigger Modal -->
+                                <button type="button" class="btn fw-bolder form-control form-control-sm"
+                                    data-bs-toggle="modal" data-bs-target="#projectModal12">
+                                    Documentation
+                                </button>
+                            </div>
+                            <div class="text-center mt-2 d-md-none">
+                                <button type="button" class="btn fw-bolder form-control form-control-sm"
+                                    data-bs-toggle="modal" data-bs-target="#projectModal12">
+                                    Documentation
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="projectModal12" tabindex="-1" aria-labelledby="projectModalLabel12"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="projectModalLabel12">Design and Development of an
+                                    Automated Storage System (ASS) on Stacked Shelves with Programmable Logic
+                                    Controller and Barcode</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row d-flex flex-wrap">
+
+                                    <img class="img-fluid rounded-2 m-auto " style="max-width: 350px; max-height: 350px"
+                                        src="./projects_files/1.jpg" alt="Media 1">
+
+
+                                    <img class="img-fluid rounded-2 m-auto " style="max-width: 350px; max-height: 350px"
+                                        src="./projects_files/2.jpg" alt="Media 2">
+
+
+                                    <img class="img-fluid rounded-2 m-auto " style="max-width: 350px; max-height: 350px"
+                                        src="./projects_files/3.jpg" alt="Media 3">
+
+
+                                    <img class="img-fluid rounded-2 m-auto " style="max-width: 350px; max-height: 350px"
+                                        src="./projects_files/4.jpg" alt="Media 4">
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                function clicked_button(id) {
+                    var less = document.getElementById('less-' + id);
+                    var dots = document.getElementById('dots-' + id);
+                    var moreText = document.getElementById('more-' + id);
+                    var btnText = document.getElementById('button-' + id);
+
+                    if (dots.style.display === "none") {
+                        less.style.display = 'inline';
+                        dots.style.display = 'inline';
+                        moreText.style.display = 'none';
+                        btnText.innerHTML = 'Read More';
+                    } else {
+                        less.style.display = "none";
+                        dots.style.display = "none";
+                        btnText.innerHTML = "Read Less";
+                        moreText.style.display = "inline";
+                    }
+                }
+                </script>
+
+
+                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                    <div class="card-body p-0">
+                        <div class="ps-5 pe-5 pt-4">
+                            <h2 class="fw-bolder p-auto">Recipefy : Identify, Find, and Share Recipes</h2>
+                        </div>
+                        <div
+                            class="d-flex align-items-start align-items-md-center justify-content-between flex-column flex-md-row">
+                            <div class="ms-5 me-5 order-2 order-md-1">
+                                <div class="small text-muted ">13 October 2023 - 31 December 2023</div>
+
+                                <p id="less-18">
+                                    Creating a dataset involves collecting, organizing, and structuring data,
+                                    including labeling imagesCreating an object detection<span id="dots-18">...</span>
+                                </p>
+                                <span id="more-18" style="display:none;">
+                                    <ul>
+                                        <li><span style="font-weight: normal;">Creating a dataset involves
+                                                collecting, organizing, and structuring data, including labeling
+                                                images</span></li>
+                                        <li><span style="font-weight: normal;">Creating an object detection
+                                                model using SSD Mobilenet v2 FPNLite, then quantizing it, and
+                                                converting it into a TFLite model</span></li>
+                                        <li><span style="font-weight: normal;">Building a recipe recommendation
+                                                model using content-based collaborative filtering and converting
+                                                it into a TFLite model as well</span></li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="button-18" onclick="clicked_button(18)"
+                                class="btn btn-primary form-control rounded-0">Read More</button>
+                            <div class="text-center d-none d-md-block">
+                                <!-- Trigger Modal -->
+                                <button type="button" class="btn fw-bolder form-control form-control-sm"
+                                    data-bs-toggle="modal" data-bs-target="#projectModal18">
+                                    Documentation
+                                </button>
+                            </div>
+                            <div class="text-center mt-2 d-md-none">
+                                <button type="button" class="btn fw-bolder form-control form-control-sm"
+                                    data-bs-toggle="modal" data-bs-target="#projectModal18">
+                                    Documentation
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="projectModal18" tabindex="-1" aria-labelledby="projectModalLabel18"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="projectModalLabel18">Recipefy : Identify, Find, and
+                                    Share Recipes</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row d-flex flex-wrap">
+
+                                    <img class="img-fluid rounded-2 m-auto " style="max-width: 350px; max-height: 350px"
+                                        src="./projects_files/2b.png" alt="Media 1">
+
+
+                                    <img class="img-fluid rounded-2 m-auto " style="max-width: 350px; max-height: 350px"
+                                        src="./projects_files/1b.jpg" alt="Media 2">
+
+
+                                    <img class="img-fluid rounded-2 m-auto " style="max-width: 350px; max-height: 350px"
+                                        src="./projects_files/3b.jpg" alt="Media 3">
+
+
+                                    <img class="img-fluid rounded-2 m-auto " style="max-width: 350px; max-height: 350px"
+                                        src="./projects_files/4b.jpg" alt="Media 4">
+
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row d-flex flex-wrap">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                function clicked_button(id) {
+                    var less = document.getElementById('less-' + id);
+                    var dots = document.getElementById('dots-' + id);
+                    var moreText = document.getElementById('more-' + id);
+                    var btnText = document.getElementById('button-' + id);
+
+                    if (dots.style.display === "none") {
+                        less.style.display = 'inline';
+                        dots.style.display = 'inline';
+                        moreText.style.display = 'none';
+                        btnText.innerHTML = 'Read More';
+                    } else {
+                        less.style.display = "none";
+                        dots.style.display = "none";
+                        btnText.innerHTML = "Read Less";
+                        moreText.style.display = "inline";
+                    }
+                }
+                </script>
+
+
+                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                    <div class="card-body p-0">
+                        <div class="ps-5 pe-5 pt-4">
+                            <h2 class="fw-bolder p-auto">Design of A Lighting System With Solar Panels In The
+                                Refugia Gardens of Magetan</h2>
+                        </div>
+                        <div
+                            class="d-flex align-items-start align-items-md-center justify-content-between flex-column flex-md-row">
+                            <div class="ms-5 me-5 order-2 order-md-1">
+                                <div class="small text-muted ">13 February 2023 - 15 September 2023</div>
+
+                                <p id="less-17">
+                                    Programming the microcontroller Arduino based on C++ languageConnecting the
+                                    microcontroller Arduino and upload data to<span id="dots-17">...</span>
+                                </p>
+                                <span id="more-17" style="display:none;">
+                                    <ul>
+                                        <li><span style="font-weight: normal;">Programming the microcontroller
+                                                Arduino based on C++ language</span></li>
+                                        <li><span style="font-weight: normal;">Connecting the microcontroller
+                                                Arduino and upload data to the website using HTTP
+                                                protocol</span></li>
+                                        <li><span style="font-weight: normal;">Designing and deploying a native
+                                                PHP web application as an information interface</span></li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="button-17" onclick="clicked_button(17)"
+                                class="btn btn-primary form-control rounded-0">Read More</button>
+                            <div class="text-center d-none d-md-block">
+                                <!-- Trigger Modal -->
+                                <button type="button" class="btn fw-bolder form-control form-control-sm"
+                                    data-bs-toggle="modal" data-bs-target="#projectModal17">
+                                    Documentation
+                                </button>
+                            </div>
+                            <div class="text-center mt-2 d-md-none">
+                                <button type="button" class="btn fw-bolder form-control form-control-sm"
+                                    data-bs-toggle="modal" data-bs-target="#projectModal17">
+                                    Documentation
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="projectModal17" tabindex="-1" aria-labelledby="projectModalLabel17"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="projectModalLabel17">Design of A Lighting System
+                                    With Solar Panels In The Refugia Gardens of Magetan</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row d-flex flex-wrap">
+
+                                    <img class="img-fluid rounded-2 m-auto " style="max-width: 350px; max-height: 350px"
+                                        src="./projects_files/1c.png" alt="Media 1">
+
+
+                                    <img class="img-fluid rounded-2 m-auto " style="max-width: 350px; max-height: 350px"
+                                        src="./projects_files/3c.jpg" alt="Media 2">
+
+
+                                    <img class="img-fluid rounded-2 m-auto " style="max-width: 350px; max-height: 350px"
+                                        src="./projects_files/2c.jpg" alt="Media 3">
+
+
+                                    <img class="img-fluid rounded-2 m-auto " style="max-width: 350px; max-height: 350px"
+                                        src="./projects_files/4c.jpg" alt="Media 4">
+
+                                </div>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="row d-flex flex-wrap">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                function clicked_button(id) {
+                    var less = document.getElementById('less-' + id);
+                    var dots = document.getElementById('dots-' + id);
+                    var moreText = document.getElementById('more-' + id);
+                    var btnText = document.getElementById('button-' + id);
+
+                    if (dots.style.display === "none") {
+                        less.style.display = 'inline';
+                        dots.style.display = 'inline';
+                        moreText.style.display = 'none';
+                        btnText.innerHTML = 'Read More';
+                    } else {
+                        less.style.display = "none";
+                        dots.style.display = "none";
+                        btnText.innerHTML = "Read Less";
+                        moreText.style.display = "inline";
+                    }
+                }
+                </script>
+
+
+                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                    <div class="card-body p-0">
+                        <div class="ps-5 pe-5 pt-4">
+                            <h2 class="fw-bolder p-auto">Adaptive Cruise Control and Intelegent Speed Assistant
+                                on RC Car</h2>
+                        </div>
+                        <div
+                            class="d-flex align-items-start align-items-md-center justify-content-between flex-column flex-md-row">
+                            <div class="ms-5 me-5 order-2 order-md-1">
+                                <div class="small text-muted ">13 January 2023 - 10 June 2023</div>
+
+                                <p id="less-16">
+                                    Designing and implementing the electrical and control systemMonitoring
+                                    current, voltage, RPM, and steering angleProgramming a<span id="dots-16">...</span>
+                                </p>
+                                <span id="more-16" style="display:none;">
+                                    <ul>
+                                        <li><span style="font-weight: normal;">Designing and implementing the
+                                                electrical and control system</span></li>
+                                        <li><span style="font-weight: normal;">Monitoring current, voltage, RPM,
+                                                and steering angle</span></li>
+                                        <li><span style="font-weight: normal;">Programming a closed-loop system
+                                                between inputs (sensors) and actuators</span></li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="button-16" onclick="clicked_button(16)"
+                                class="btn btn-primary form-control rounded-0">Read More</button>
+                            <div class="text-center d-none d-md-block">
+                                <!-- Trigger Modal -->
+                                <button type="button" class="btn fw-bolder form-control form-control-sm"
+                                    data-bs-toggle="modal" data-bs-target="#projectModal16">
+                                    Documentation
+                                </button>
+                            </div>
+                            <div class="text-center mt-2 d-md-none">
+                                <button type="button" class="btn fw-bolder form-control form-control-sm"
+                                    data-bs-toggle="modal" data-bs-target="#projectModal16">
+                                    Documentation
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="projectModal16" tabindex="-1" aria-labelledby="projectModalLabel16"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="projectModalLabel16">Adaptive Cruise Control and
+                                    Intelegent Speed Assistant on RC Car</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row d-flex flex-wrap">
+
+                                    <img class="img-fluid rounded-2 m-auto " style="max-width: 350px; max-height: 350px"
+                                        src="./projects_files/1d.jpg" alt="Media 1">
+
+
+                                    <img class="img-fluid rounded-2 m-auto " style="max-width: 350px; max-height: 350px"
+                                        src="./projects_files/2d.jpg" alt="Media 2">
+
+
+                                    <img class="img-fluid rounded-2 m-auto " style="max-width: 350px; max-height: 350px"
+                                        src="./projects_files/3d.jpg" alt="Media 3">
+
+
+                                    <img class="img-fluid rounded-2 m-auto " style="max-width: 350px; max-height: 350px"
+                                        src="./projects_files/4d.jpg" alt="Media 4">
+
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row d-flex flex-wrap">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                function clicked_button(id) {
+                    var less = document.getElementById('less-' + id);
+                    var dots = document.getElementById('dots-' + id);
+                    var moreText = document.getElementById('more-' + id);
+                    var btnText = document.getElementById('button-' + id);
+
+                    if (dots.style.display === "none") {
+                        less.style.display = 'inline';
+                        dots.style.display = 'inline';
+                        moreText.style.display = 'none';
+                        btnText.innerHTML = 'Read More';
+                    } else {
+                        less.style.display = "none";
+                        dots.style.display = "none";
+                        btnText.innerHTML = "Read Less";
+                        moreText.style.display = "inline";
+                    }
+                }
+                </script>
+
+
+                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                    <div class="card-body p-0">
+                        <div class="ps-5 pe-5 pt-4">
+                            <h2 class="fw-bolder p-auto">Courier Smart Car With ESP32</h2>
+                        </div>
+                        <div
+                            class="d-flex align-items-start align-items-md-center justify-content-between flex-column flex-md-row">
+                            <div class="ms-5 me-5 order-2 order-md-1">
+                                <div class="small text-muted ">18 August 2022 - 30 December 2022</div>
+
+                                <p id="less-15">
+                                    Researched and developed a courier smart car using ESP32, focusing on
+                                    creating a web-based&nbsp;HMI control<span id="dots-15">...</span>
+                                </p>
+                                <span id="more-15" style="display:none;">
+                                    <ul>
+                                        <li><span style="font-weight: normal;">Researched and developed a
+                                                courier smart car using ESP32, focusing on creating a
+                                                web-based&nbsp;<span
+                                                    style="font-size: 0.875rem; font-family: var(--bs-font-sans-serif); text-align: var(--bs-body-text-align);">HMI
+                                                    control interface</span></span></li>
+                                        <li><span style="font-weight: normal;">Integrated sensors, actuators,
+                                                and communication modules, ensuring reliability and
+                                                performance&nbsp;<span
+                                                    style="font-size: 0.875rem; font-family: var(--bs-font-sans-serif); text-align: var(--bs-body-text-align);">through
+                                                    comprehensive testing</span></span></li>
+                                        <li><span style="font-weight: normal;">Implemented IoT features for
+                                                remote control and monitoring, while maintaining detailed
+                                                project&nbsp;<span
+                                                    style="font-size: 0.875rem; font-family: var(--bs-font-sans-serif); text-align: var(--bs-body-text-align);">documentation</span></span>
+                                        </li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="button-15" onclick="clicked_button(15)"
+                                class="btn btn-primary form-control rounded-0">Read More</button>
+                            <div class="text-center d-none d-md-block">
+                                <!-- Trigger Modal -->
+                                <button type="button" class="btn fw-bolder form-control form-control-sm"
+                                    data-bs-toggle="modal" data-bs-target="#projectModal15">
+                                    Documentation
+                                </button>
+                            </div>
+                            <div class="text-center mt-2 d-md-none">
+                                <button type="button" class="btn fw-bolder form-control form-control-sm"
+                                    data-bs-toggle="modal" data-bs-target="#projectModal15">
+                                    Documentation
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="projectModal15" tabindex="-1" aria-labelledby="projectModalLabel15"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="projectModalLabel15">Courier Smart Car With ESP32
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+
+                            </div>
+                            <div class="modal-body">
+                                <div class="row d-flex flex-wrap">
+
+                                    <img class="img-fluid rounded-2 m-auto " style="max-width: 350px; max-height: 350px"
+                                        src="./projects_files/1e.png" alt="Media 1">
+
+
+                                    <img class="img-fluid rounded-2 m-auto " style="max-width: 350px; max-height: 350px"
+                                        src="./projects_files/2e.png" alt="Media 2">
+
+
+                                    <img class="img-fluid rounded-2 m-auto " style="max-width: 350px; max-height: 350px"
+                                        src="./projects_files/3e.jpeg" alt="Media 3">
+
+
+                                    <img class="img-fluid rounded-2 m-auto " style="max-width: 350px; max-height: 350px"
+                                        src="./projects_files/4e.jpeg" alt="Media 4">
+
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row d-flex flex-wrap">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                function clicked_button(id) {
+                    var less = document.getElementById('less-' + id);
+                    var dots = document.getElementById('dots-' + id);
+                    var moreText = document.getElementById('more-' + id);
+                    var btnText = document.getElementById('button-' + id);
+
+                    if (dots.style.display === "none") {
+                        less.style.display = 'inline';
+                        dots.style.display = 'inline';
+                        moreText.style.display = 'none';
+                        btnText.innerHTML = 'Read More';
+                    } else {
+                        less.style.display = "none";
+                        dots.style.display = "none";
+                        btnText.innerHTML = "Read Less";
+                        moreText.style.display = "inline";
+                    }
+                }
+                </script>
+
+
+                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                    <div class="card-body p-0">
+                        <div class="ps-5 pe-5 pt-4">
+                            <h2 class="fw-bolder p-auto">Design and Development of a House Lock with E-KTP
+                                Integrated with ESP-32 Cam and Telegram</h2>
+                        </div>
+                        <div
+                            class="d-flex align-items-start align-items-md-center justify-content-between flex-column flex-md-row">
+                            <div class="ms-5 me-5 order-2 order-md-1">
+                                <div class="small text-muted ">30 January 2022 - 10 June 2022</div>
+
+                                <p id="less-14">
+                                    Designing and implementing a house locking system using an ESP-32 Cam
+                                    controller and
+                                    TelegramDeveloping an informational<span id="dots-14">...</span>
+                                </p>
+                                <span id="more-14" style="display:none;">
+                                    <ul>
+                                        <li><span style="font-weight: normal;">Designing and implementing a
+                                                house locking system using an ESP-32 Cam controller and
+                                                Telegram</span></li>
+                                        <li><span style="font-weight: normal;">Developing an informational web
+                                                system with native PHP integrated with a MySQL database</span>
+                                        </li>
+                                        <li><span style="font-weight: normal;">Creating an HMI using Telegram as
+                                                the operational interface for system usage</span></li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <button id="button-14" onclick="clicked_button(14)"
+                                class="btn btn-primary form-control rounded-0">Read More</button>
+                            <div class="text-center d-none d-md-block">
+                                <!-- Trigger Modal -->
+                                <button type="button" class="btn fw-bolder form-control form-control-sm"
+                                    data-bs-toggle="modal" data-bs-target="#projectModal14">
+                                    <a href="https://youtu.be/VeYax7uNNjo?feature=shared" class="text-decoration-none"
+                                        target="_blank">Documentation</a>
+                                </button>
+                            </div>
+                            <div class="text-center mt-2 d-md-none">
+                                <button type="button" class="btn fw-bolder form-control form-control-sm"
+                                    data-bs-toggle="modal" data-bs-target="#projectModal14">
+                                    <a href="https://youtu.be/VeYax7uNNjo?feature=shared" class="text-decoration-none"
+                                        target="_blank">Documentation</a>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section-->
+
+</main>
+<!-- Footer-->
+<?php
+include('footer.php')
+?>
